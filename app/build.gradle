@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.islam.otgtask"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildscript {
+        ext.kotlin_version = '1.3.41'
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildTypes.each {
+        it.buildConfigField 'String', 'NEWS_API_KEY', '"b7d4d6334644451596939d1821187aba"'
+    }
+
+}
+
+dependencies {
+
+    //--------------------------------------Mandatory dependencies----------------------------------------------
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //core
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0-beta01'
+
+    //Kotlin
+    implementation "androidx.core:core-ktx:1.1.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+    //coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
+
+
+    //lifecycle
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0-beta01" //this only to get ProcessLifecycle i conot find an alternative in kotlin libraries
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-beta01'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-beta01'
+    kapt  "androidx.lifecycle:lifecycle-compiler:2.2.0-beta01"
+
+
+    //network
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+
+
+    //view pager
+    implementation 'androidx.viewpager2:viewpager2:1.0.0-beta05'
+
+    //for top snackbar
+    implementation 'com.tapadoo.android:alerter:4.0.2'
+
+    //check for updates
+    implementation 'com.google.android.play:core:1.6.3'
+
+    implementation 'com.afollestad.material-dialogs:core:3.1.0'
+    //--------------------------------------Secondary dependencies----------------------------------------------
+
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //pick image from gallery or camera
+    implementation 'com.github.jkwiecien:EasyImage:1.3.1'
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-3'
+    //--------------------------------------Testing----------------------------------------------
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="tabStyle">@style/AppTabLayout</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:fontFamily">@font/font_family</item>
+        <item name="navigationViewStyle">@style/AppNavigationDrawer</item> //to set custom font for the drawer navigation
+
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabSelectedTextColor">?attr/colorPrimary</item>
+        <item name="tabTextColor">@color/mtrl_tabs_icon_color_selector</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="tabIndicatorColor">?attr/colorPrimary</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+    </style>
+
+    <style name="AppNavigationDrawer" parent="Widget.Design.NavigationView">
+        <item name="android:textAppearance">@style/TextNavigationDrawer</item>
+    </style>
+
+    <style name="TextNavigationDrawer">
+        <item name="android:fontFamily">@font/font_family</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

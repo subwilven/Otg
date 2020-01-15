@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "686281068747",
+    "firebase_url": "https://jaahes-1c703.firebaseio.com",
+    "project_id": "jaahes-1c703",
+    "storage_bucket": "jaahes-1c703.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686281068747:android:66d6e5e80f68677f",
+        "android_client_info": {
+          "package_name": "com.islam.otgtask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686281068747-lv8rk5nv3iccum0uahndojvgkjm2qr74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.islam.basepropject",
+            "certificate_hash": "74de39c8f141a051ebb243b83446316c7b19461d"
+          }
+        },
+        {
+          "client_id": "686281068747-gtrdlf2v7s7lqp97kc9jdr36701gcfkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2cgvotV-_XadZiEGuNNmDgLJ2HxF0LzU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686281068747-gtrdlf2v7s7lqp97kc9jdr36701gcfkl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "686281068747-j8dg0i6ji90mmlh2ev8dr1jacpdqboug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ITSS.Aswagi.Aswagi-Vendor"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

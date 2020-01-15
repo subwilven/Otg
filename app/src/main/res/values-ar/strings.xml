@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BasePropject</string>
+    <string name="google_map_app_not_found">google_map_app_not_found</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="title1">الرئيسية</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="check_your_mobile_data_or_wi_fi">تحقق من ال Wifi  او بيانات الهاتف</string>
+    <string name="no_internet_connection">لا يوجد اتصال بالشبكة</string>
+    <string name="server_cannot_be_reached">لا نستطيع الوصول للخادم</string>
+    <string name="please_try_again_later">حاول مرة اخري لاحقا</string>
+    <string name="no_results_found">لا توجد نتائج</string>
+    <string name="loading">تحميل</string>
+    <string name="something_went_wrong">حدث خطا الرجاء المحاولة مرة اخري</string>
+    <string name="unexpected_error_happened">خطا غير متوقع</string>
+    <string name="no_network_available">لا يوجد اتصال بالشبكة الرجاء التحقق</string>
+    <string name="cannot_reach_the_server">لا نستيطع الوصول للخادم حاول مرة اخري</string>
+    <string name="server_error">خطأ ف الخادم</string>
+    <string name="all_fields_are_required">كل الحقول مطلوبة</string>
+    <string name="email_not_valid">البريد الالكتروني غير صحيح</string>
+    <string name="password_should_be_at_least_6_charachter">كلمة المرور يجب علي الاقل ان تكون 6 رموز</string>
+    <string name="you_are_offline">انت غير متصل بالانترنت</string>
+    <string name="connected">متصل</string>
+    <string name="important">Important</string>
+</resources>

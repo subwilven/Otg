@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BasePropject</string>
+    <string name="google_map_app_not_found">google_map_app_not_found</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title1">Home</string>
+    <string name="retry">Retry</string>
+    <string name="check_your_mobile_data_or_wi_fi">check your mobile data or WI-FI</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="server_cannot_be_reached">Server cannot be reached</string>
+    <string name="please_try_again_later">Please try again later</string>
+    <string name="no_results_found">No results found</string>
+    <string name="loading">Loading</string>
+
+    <string name="no_network_available">No network available, please check your WiFi or Data connection</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="unexpected_error_happened">Unexpected Error Happened</string>
+    <string name="cannot_reach_the_server">Cannot reach the server try again later</string>
+    <string name="server_error">Server Error</string>
+    <string name="all_fields_are_required">All fields are required</string>
+    <string name="email_not_valid">Email not valid</string>
+    <string name="password_should_be_at_least_6_charachter">password_should_be_at_least_6_charachter</string>
+    <string name="you_are_offline">You are offline</string>
+    <string name="connected">Connected</string>
+    <string name="important">Important</string>
+    <string name="contacts">Contacts</string>
+    <string name="new_contact">New Contact</string>
+    <string name="sort_by">Sort By</string>
+    <string name="latitude_should_be_between">Latitude should be between -90 : 90</string>
+    <string name="longitude_should_be_between">Longitude  should be between -180 : 180</string>
+    <string name="name_should_be_at_least_3_charachter">Name should be at least 3 charachter</string>
+    <string name="phone_not_valid">Phone not valide</string>
+    <string name="country_code">Country Code</string>
+    <string name="ok">Ok</string>
+</resources>
